@@ -13,6 +13,7 @@ import (
 	"github.com/charmbracelet/gum/man"
 	"github.com/charmbracelet/gum/spin"
 	"github.com/charmbracelet/gum/style"
+	"github.com/charmbracelet/gum/table"
 	"github.com/charmbracelet/gum/write"
 )
 
@@ -151,4 +152,7 @@ type Gum struct {
 	// $ gum write > output.text
 	//
 	Write write.Options `cmd:"" help:"Prompt for long-form text"`
+
+	// TODO: Table
+	Table table.Options `cmd:"" help:"Choose row of a CSV"`
 }
